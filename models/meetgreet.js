@@ -14,7 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   MeetGreet.init({
-    meet_greet_id:{type: DataTypes.INTEGER,
+    meet_greet_id:{
+    type: DataTypes.INTEGER,
     primaryKey:true,
     autoIncrement:true,
     allowNull:false 
@@ -32,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     allowNull:false
   }, 
     meet_end_time:{
-      Type:DataTypes.DATE,
+      type:DataTypes.DATE,
       allowNull:false
     }
   }, {
